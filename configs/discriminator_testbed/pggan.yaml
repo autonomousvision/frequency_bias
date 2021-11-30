@@ -1,0 +1,5 @@
+model:
+  class_name: models.PGGANDiscriminator
+  divide_channels_by: 8
+  downsampling_mode: avg
+  padding_mode: zeros

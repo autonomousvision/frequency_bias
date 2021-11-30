@@ -1,0 +1,23 @@
+data:
+  root: data/baboon
+  resolution: 64
+  subset:
+model:
+  spectrum_disc: False
+training:
+  batch_size: 10
+  nworkers: 0
+  monitoring: tensorboard
+  nepochs: 10000
+  print_every: 100
+  eval_every: 100
+  save_every: 1000
+  lr_g: 0.01
+  lr_d: 0.001
+  reg_param: 10.
+  model_average_beta: 0.999
+  criterion:
+    class_name: torch.nn.BCEWithLogitsLoss
+    weight:
+  model_file: model.pt
+  seed: 0

@@ -1,0 +1,9 @@
+data:
+  resolution: 128
+model:
+  class_name: models.PGGANDiscriminator
+  divide_channels_by: 8
+  downsampling_mode: blurpool
+training:
+  nepochs: 30000
+  save_every: 10000

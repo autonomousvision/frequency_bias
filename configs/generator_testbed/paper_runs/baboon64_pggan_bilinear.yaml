@@ -1,0 +1,11 @@
+data:
+  resolution: 128
+model:
+  class_name: models.PGGANGenerator
+  z_dim: 64
+  divide_channels_by: 8
+  upsampling_mode: bilinear
+  padding_mode: reflect
+training:
+  nepochs: 30000
+  save_every: 10000

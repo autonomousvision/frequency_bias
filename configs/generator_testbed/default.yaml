@@ -1,0 +1,19 @@
+data:
+  root: data/baboon
+  resolution: 64
+  subset:
+model:
+training:
+  batch_size: 10
+  nworkers: 0
+  monitoring: tensorboard
+  nepochs: 10000
+  print_every: 100
+  eval_every: 100
+  save_every: 1000
+  lr: 0.001
+  criterion:
+    class_name: torch.nn.MSELoss
+    weight:
+  model_file: model.pt
+  seed: 0

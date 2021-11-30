@@ -1,0 +1,2 @@
+python discriminator_testbed.py baboon64/pggan configs/discriminator_testbed/pggan.yaml
+python eval_discriminator.py baboon64/pggan --psnr --image-evolution --spectrum-evolution --spectrum-error-evolution

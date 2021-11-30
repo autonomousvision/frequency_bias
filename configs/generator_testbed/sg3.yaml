@@ -1,0 +1,4 @@
+model:
+  class_name: models.SG3Generator
+  z_dim: 64
+  divide_channels_by: 8

@@ -1,0 +1,13 @@
+data:
+  root: data/toyset64_100
+  subset: 10
+model:
+  class_name: models.PGGANDiscriminator
+  divide_channels_by: 8
+  downsampling_mode: stride
+  spectrum_disc: True
+training:
+  nepochs: 100000
+  print_every: 1000
+  eval_every: 1000
+  save_every: 10000
